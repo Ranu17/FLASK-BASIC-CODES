@@ -10,3 +10,14 @@ INSTALL PYTHON 3 OR ABOVE. RUN THE .PY FILE IN THE COMMAND PROMPT BY CREATING A 
 6. INSTALL FLASK ------ pip install flask
 7. CHANGE TO DESIRED TASK FOLDER
 8. RUN ----- flask run
+
+
+
+FROM TASK10 THE CODE INVOLVES DATABASE AS WELL USING MYSQL. THE DATABASE IS MADE IN THE MYSQL SOFTWARE AND THEN QUERIED USING FLASK.
+conn= pymysql.connect(host='localhost',user='root',password='project', db='banasthali')
+<<<<<<<     CREATE YOUR OWN USER AND PASSSWORD ATTRIBUTES IN MYSQL      >>>>>>>>
+DATABASE NAME: banasthali
+TABLE NAME: employee
+FIELDS:
+eid (int(4))
+ename (varchar(20))
