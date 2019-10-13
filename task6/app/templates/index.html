@@ -1,0 +1,16 @@
+<html>
+    <head>
+	{% if title %}
+        <title>{{title}}-MY PAGE</title>
+	{% else %}
+		<title>Welcome to Banasthali</title>
+	{% endif %}
+    </head>
+    <body style="background-color:pink; text-align:center; content-align:center;">
+	<h1>Hello, {{ user.username }} </h1>
+	{% for post in posts %}
+		<div style="margin-top:50px;font-size:26px;background-color:blue; height:200px; width:400px; text-align:center;align:center"> {{post.author.username}} says: <b> {{post.body}}</b></div>
+	{% endfor %}
+        
+    </body>
+</html>
