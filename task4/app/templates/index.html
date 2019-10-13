@@ -1,0 +1,12 @@
+<html>
+    <head>
+	{% if title %}
+        <title>{{title}}-MY PAGE</title>
+	{% else %}
+		<title>Welcome to Banasthali</title>
+	{% endif %}
+    </head>
+    <body bgcolor="pink" align="center">
+        <h1>Hello, {{ user.username }} </h1>
+    </body>
+</html>
